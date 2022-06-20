@@ -8,6 +8,8 @@ import os
 import time
 import Thread
 
+echo "chapethaxxor" 
+
 def getLinks(bsObj, queue):
     print('Getting links in {}'.format(os.getpid()))
     links = bsObj.find('div', {'id':'bodyContent'}).find_all('a', href=re.compile('^(/wiki/)((?!:).)*$'))
